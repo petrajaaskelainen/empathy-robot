@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CONTROLLER</title>
+  <link rel="stylesheet" type="text/css" href="/css/eyes.css">
+  <script src="/vue/vue.js" defer></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="/js/mover.js" defer></script>
+  <script src="/js/faceController.js" defer></script>
+</head>
+<body>
+  <div id="app">
+	  
+		<!--
+    <div id="eye1" v-on:click="moveEyes" v-on:mousemove="moveEyes" v-on:mousedown="pressed" v-on:mouseup="released">
+        <div v-bind:style="{ left: eyePos.x + 'px', top: eyePos.y + 'px'}">
+          &nbsp;'
+        </div>
+    </div>
+		-->
+	
+	<div id= "controlButtons">
+		LAST MOVE: {{turned}}
+    	<button @click="turnLeft">LEFT</button>
+		<button @click="turnRight">RIGHT</button>
+		<button @click="turnRight">LOW VIBRATION</button> 
+		<button @click="turnRight">HIGH VIBRATION</button> 
+	</div>
+	 
+	<div id="facialExpressions">  
+	  <button id="angryc"><img src="http://localhost:3000/img/Angry.png" alt="angry"></button>
+	  <button id="confusec"><img src="http://localhost:3000/img/Confuse.png" alt="confuse"></button>
+	  <button id="disgustc"><img src="http://localhost:3000/img/Disgust.png" alt="disgust"></button>
+	  <button id="fearfulc"><img src="http://localhost:3000/img/Fearful.png" alt="fearful"></button>
+	  <button id="happyc"><img src="http://localhost:3000/img/Happy.png" alt="happy"></button>
+	  <button id="headpatc"><img src="http://localhost:3000/img/Head_Pat.png" alt="headpat"></button> 	  
+	  <button id="neutralc"><img src="http://localhost:3000/img/Neutral.png" alt="neutral"></button>
+	  <button id="sadc"><img src="http://localhost:3000/img/Sad.png" alt="sad"></button>
+	  <button id="sleepc"><img src="http://localhost:3000/img/Sleep.png" alt="sleep"></button>
+	  <button id="surprisec"><img src="http://localhost:3000/img/Surprise.png" alt="surprise"></button>
+	</div>
+	
+	
+	
+<script>
+
+		</script>
+	
+	  
+  </div>
+</body>
+</html>

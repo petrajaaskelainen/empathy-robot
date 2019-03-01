@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EYES</title>
+	<link rel="stylesheet" type="text/css" href="/css/eyes.css">
+	<script src="/socket.io/socket.io.js" defer></script>
+	<script src="/vue/vue.js" defer></script>
+	<script src="/js/eyes.js" defer></script>
+	<script src="/js/faceController.js" defer></script>
+</head>
+<body>
+	
+	<div id="robotExpressions">  
+	  <img id="angry" src="http://localhost:3000/img/Angry.png" alt="angry">
+	  <img id="confuse" src="http://localhost:3000/img/Confuse.png" alt="confuse">	  
+	  <img id="disgust" src="http://localhost:3000/img/Disgust.png" alt="disgust">
+	  <img id="fearful" src="http://localhost:3000/img/Fearful.png" alt="fearful">	 
+	  <img id="happy" src="http://localhost:3000/img/Happy.png" alt="happy">
+	  <img id="headpat" src="http://localhost:3000/img/Head_Pat.png" alt="headpat">	 	  
+	  <img id="neutral" src="http://localhost:3000/img/Neutral.png" alt="neutral">
+	  <img id="sad" src="http://localhost:3000/img/Sad.png" alt="sad">	 
+	  <img id="sleep" src="http://localhost:3000/img/Sleep.png" alt="sleep">
+	  <img id="surprise" src="http://localhost:3000/img/Surprise.png" alt="surprise">
+	</div>
+	
+	<!--
+	  <div id="dots">
+    <div id="eye1">
+        <div 
+          v-bind:style="{ left: eyePos.x + 'px', top: eyePos.y + 'px'}">
+          &nbsp;'
+        </div>
+    </div>
+       <div id="eye2">
+        <div 
+          v-bind:style="{ left: eyePos.x + 'px', top: eyePos.y + 'px'}">
+          &nbsp;'
+        </div>
+    </div>
+  </div>
+	-->
+	
+</body>
+</html>
